@@ -3,15 +3,15 @@ from torchvision import datasets
 from torchvision.transforms import ToTensor
 
 training_data = datasets.FashionMNIST(
-    root="data",
-    train=True, 
+    root="fashion_mnist_dataset",
+    train=True,
     download=True,
     transform=ToTensor()
 )
 
 test_data = datasets.FashionMNIST(
-    root="data",
-    train=False, 
+    root="fashion_mnist_dataset",
+    train=False,
     download=True,
     transform=ToTensor()
 )

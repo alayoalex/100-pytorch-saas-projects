@@ -1,7 +1,7 @@
 import torch
 from torch import nn
-from example4_neural_network import NeuralNetwork, device
-from example3_dataloader import test_dataloader, train_dataloader
+from model_engine import NeuralNetwork, device
+from dataloader import test_dataloader, train_dataloader
 
 model = NeuralNetwork().to(device)
 

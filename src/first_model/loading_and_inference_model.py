@@ -1,9 +1,9 @@
 import torch
-from example4_neural_network import NeuralNetwork, device
-from example3_dataloader import test_data
+from model_engine import NeuralNetwork, device
+from dataloader import test_data
 
 model = NeuralNetwork().to(device)
-model.load_state_dict(torch.load("model.pth"))
+model.load_state_dict(torch.load("model.pth", weights_only=True))
 
 classes = [
     "T-shirt/top",
