@@ -143,5 +143,4 @@ tempCodeRunnerFile.py
 .DS_Store
 
 *.pth
-fashion_mnist_example/
-fashion_mnist_dataset/
+dataset/
